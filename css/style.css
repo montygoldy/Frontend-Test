@@ -87,9 +87,9 @@ button {
   .header .video-section {
     background-image: url("../img/video-thumbnail.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 550px;
+    background-size: 100% auto;
+    background-position: center;
+    height: 500px;
     position: relative; }
     .header .video-section iframe,
     .header .video-section object,
@@ -160,6 +160,48 @@ button {
   100% {
     transform: scale(1); } }
 
+@media only screen and (max-width: 56.25em) {
+  .video-section {
+    height: 320px !important; }
+    .video-section__content {
+      top: 50% !important; } }
+
+@media only screen and (max-width: 43.5em) {
+  .video-section {
+    height: 265px !important; }
+    .video-section .header-small-text {
+      font-size: 1.4rem !important; }
+    .video-section h2 {
+      font-size: 2.5rem !important; }
+    .video-section button#video-button {
+      width: 50px !important;
+      height: 50px !important; }
+      .video-section button#video-button .invisible {
+        font-size: 1.7rem !important; }
+      .video-section button#video-button:hover .invisible {
+        left: 8px !important; } }
+
+@media only screen and (max-width: 31.5em) {
+  .video-section {
+    height: 190px !important; }
+    .video-section .header-small-text {
+      font-size: 1.1rem !important; }
+    .video-section h2 {
+      font-size: 1.6rem !important; }
+    .video-section button#video-button {
+      width: 40px !important;
+      height: 40px !important; }
+      .video-section button#video-button .invisible {
+        font-size: 1.3rem !important; }
+      .video-section button#video-button i {
+        font-size: 3rem !important; }
+      .video-section button#video-button:hover .invisible {
+        left: 8px !important; } }
+
+@media only screen and (max-width: 20em) {
+  .video-section {
+    height: 155px !important; } }
+
 main .heading {
   text-align: center;
   line-height: 1.2;
@@ -172,6 +214,9 @@ main .heading {
 
 main .car-detail {
   display: flex; }
+  @media only screen and (max-width: 43.5em) {
+    main .car-detail {
+      flex-direction: column; } }
   main .car-detail__image-section {
     flex: 1; }
     main .car-detail__image-section img {
@@ -243,3 +288,14 @@ main .car-detail {
         width: auto; }
         .card-section .car-card__footer .btn:last-child {
           margin-bottom: 0; }
+
+@media only screen and (max-width: 43.5em) {
+  .card-section {
+    flex-direction: column;
+    width: 90%;
+    margin: auto; }
+    .card-section .car-card {
+      flex: 1;
+      margin: 2rem 0; }
+      .card-section .car-card .car-image {
+        height: 250px; } }

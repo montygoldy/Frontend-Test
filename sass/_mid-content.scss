@@ -13,6 +13,9 @@
     }
     .car-detail {
       display: flex;
+      @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+      }
       &__image-section {
         flex: 1;
         img {

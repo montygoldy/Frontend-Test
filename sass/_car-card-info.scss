@@ -36,7 +36,7 @@
       }
       img {
         width: 100%;
-        height: 100%;
+        height: 100%
       }
       .info-table {
         margin-top: 2rem;
@@ -63,6 +63,22 @@
         &:last-child {
           margin-bottom: 0;
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-small) {
+  .card-section{
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+
+    .car-card{
+      flex: 1;
+      margin: 2rem 0;
+      .car-image{
+        height: 250px;
       }
     }
   }
