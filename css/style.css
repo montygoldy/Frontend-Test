@@ -49,7 +49,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'MiniSans';
+  font-family: 'MiniSerifRegular';
   line-height: 1.6;
   min-height: 100vh;
   color: var(--color-dark-1); }
@@ -72,7 +72,13 @@ button {
   padding: 1rem 2rem;
   display: block;
   width: 150px;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all .3s; }
+  .btn:hover {
+    background: var(--color-grey-dark-2);
+    transform: scale(1.05);
+    transition: all .3s; }
 
 .header {
   width: 100%;
@@ -185,3 +191,52 @@ main .car-detail {
     font-family: 'MiniSerifRegular';
     margin-bottom: 2rem;
     width: 80%; }
+
+.card-section {
+  margin: 4rem 0;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap; }
+  .card-section .car-card {
+    flex: 0 0 22%;
+    margin: 10px; }
+    .card-section .car-card:nth-of-type(4n) {
+      margin-right: 0; }
+    .card-section .car-card:nth-of-type(4n+1) {
+      margin-left: 0; }
+    .card-section .car-card__header {
+      text-align: left;
+      margin-bottom: 1.2rem; }
+      .card-section .car-card__header h4 {
+        font-size: 1.8rem;
+        width: 80%;
+        line-height: 1.2;
+        margin-bottom: 1.2rem; }
+      .card-section .car-card__header .price {
+        font-size: 1.7rem;
+        font-family: 'MiniSerifBold'; }
+    .card-section .car-card__body {
+      margin-bottom: 2rem;
+      overflow: hidden; }
+      .card-section .car-card__body img {
+        width: 100%;
+        height: 100%; }
+      .card-section .car-card__body .info-table {
+        margin-top: 2rem; }
+        .card-section .car-card__body .info-table .row {
+          display: flex;
+          margin-bottom: .8rem;
+          font-size: 1.5rem;
+          line-height: 1.3; }
+          .card-section .car-card__body .info-table .row .left-info {
+            flex: 0 0 35%;
+            font-family: 'MiniSerifBold'; }
+          .card-section .car-card__body .info-table .row .right-info {
+            flex: 0 0 65%; }
+    .card-section .car-card__footer {
+      display: flex;
+      flex-direction: column; }
+      .card-section .car-card__footer .btn {
+        width: auto; }
+        .card-section .car-card__footer .btn:last-child {
+          margin-bottom: 0; }
