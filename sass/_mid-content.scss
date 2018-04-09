@@ -13,9 +13,6 @@
     }
     .car-detail {
       display: flex;
-      @media only screen and (max-width: $bp-small) {
-        flex-direction: column;
-      }
       &__image-section {
         flex: 1;
         img {
@@ -39,6 +36,54 @@
         font-family: 'MiniSerifRegular';
         margin-bottom: 2rem;
         width: 80%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    .car-card {
+      flex: 0 0 30% !important;
+    }
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    .car-detail {
+      h3 {
+        font-size: 1.8rem!important;
+        margin-bottom: .8rem!important;
+        margin-top: 1rem!important;
+      }
+      p.description{
+        width: 90%!important;
+        margin-bottom: 1rem!important;
+      }
+    }
+  }
+
+
+  @media only screen and (max-width: $bp-small) {
+    .heading{
+      margin-bottom: 3rem!important;
+    }
+    .car-detail{
+      flex-direction: column;
+       &__content-section{
+         order: 1;
+         margin: 2rem 0 3rem 0;
+       }
+    }
+    .heading {
+      h2 {
+        font-size: 3rem !important;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $bp-smaller) {
+    .heading {
+      margin-bottom: 3rem!important;
+      h2 {
+        font-size: 2.5rem!important;
       }
     }
   }
