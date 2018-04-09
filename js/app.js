@@ -112,10 +112,10 @@ $(document).ready(function() {
       .append($driveTrain);
     //Footer element
     $footer = $("<div>").addClass("car-card__footer");
-    $viewDetail = $("<div>")
+    $viewDetail = $("<button>")
       .addClass("btn")
       .text("VIEW DETAILS");
-    $book = $("<div>")
+    $book = $("<button>")
       .addClass("btn")
       .text("BOOK A TEST DRIVE");
 
