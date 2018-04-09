@@ -289,7 +289,15 @@ main .car-detail {
         .card-section .car-card__footer .btn:last-child {
           margin-bottom: 0; }
 
+@media only screen and (max-width: 68.75em) {
+  .car-card {
+    flex: 0 0 30% !important; } }
+
 @media only screen and (max-width: 43.5em) {
+  .car-card {
+    flex: 0 0 44% !important; } }
+
+@media only screen and (max-width: 31.5em) {
   .card-section {
     flex-direction: column;
     width: 90%;

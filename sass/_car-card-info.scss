@@ -68,7 +68,19 @@
   }
 }
 
+@media only screen and (max-width: $bp-large) {
+  .car-card {
+    flex: 0 0 30% !important;
+  }
+}
+
 @media only screen and (max-width: $bp-small) {
+  .car-card {
+    flex: 0 0 44%!important;
+  }
+}
+
+@media only screen and (max-width: $bp-smaller) {
   .card-section{
     flex-direction: column;
     width: 90%;
